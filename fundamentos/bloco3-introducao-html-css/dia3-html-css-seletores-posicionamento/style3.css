@@ -1,0 +1,44 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: red;
+}
+
+li:active {
+    color: rgb(255, 208, 0);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+div:hover {
+    border: 5px solid red;
+}
+
+.primaria {
+    color: blue;
+}
+
+.secundaria {
+    color: aquamarine;
+}
+
+.complementar {
+    color: silver;
+    font-size: 25px;
+}
+
+.escura {
+    color: rgb(0, 0, 41);
+}
+
+.clara {
+    color: rgb(217, 213, 255);
+}
+
+h3 {
+    font-style: italic;
+}
