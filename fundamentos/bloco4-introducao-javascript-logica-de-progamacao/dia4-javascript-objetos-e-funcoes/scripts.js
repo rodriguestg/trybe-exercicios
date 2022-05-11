@@ -177,3 +177,54 @@ function decifrandoRomano(romanos) {
   return numeroDeSoma;
 }
 console.log(decifrandoRomano('MMXVIII'));
+
+const vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+
+function arrayOfNumbers(vector) {
+  const resultado = [];
+  for (let i = 0; i < vector.length; i += 1) {
+    const arrayAtual = vector[i];
+    for (let i2 = 0; i2 < arrayAtual.length; i2 += 1) {
+      const numeroAtual = arrayAtual[i2];
+      const calculoNumero = numeroAtual % 2;
+      if (calculoNumero === 0) {
+      resultado.push(numeroAtual)
+      }
+    }
+  }
+  return resultado
+}
+console.log(arrayOfNumbers(vector));
+
+const basket = [
+  'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+  'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+  'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+  'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+  'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+  'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+  'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+  'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+  'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+  'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+  'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+  'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+  'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+  'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+  'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+  'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+  'Banana', 'Pera', 'Abacate', 'Uva',
+];
+
+const resultado2 = {};
+
+for (i = 0; i < basket.length; i += 1) {
+  const frutaAtual = basket[i];
+    if (frutaAtual === comparador) {
+      resultado2[frutaAtual] += 1;
+    }
+  }
+  for (i = 0; i < basket.length; i += 1) {
+    const comparador = basket[i];
+}
+
